@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Moduvo</title>
+  <meta name="description" content="Book a free 30 minute operations audit with Moduvo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <nav class="nav" id="mainNav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Moduvo home">MODU<span class="accent">V</span>O</a>
+      <ul class="nav__links" role="list">
+        <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="webinar.html">Webinar</a></li><li><a href="affiliate.html">Affiliate</a></li><li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list"><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="webinar.html">Webinar</a></li><li><a href="affiliate.html">Affiliate</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html" class="btn btn--primary">Book a Call</a></li></ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero__bg"><div class="hero__glow" id="heroGlow"></div></div>
+    <div class="container">
+      <span class="section__label">Contact</span>
+      <h1>Let us talk about what you can stop doing manually.</h1>
+      <p>Book a free 30 minute operations audit. No pitch, no fluff. Just a clear map of what can be automated and what the ROI looks like.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <h3 style="margin-bottom:24px">What to expect</h3>
+          <div class="info-card"><h4>Location</h4><p>CEE Region, serving Poland and European markets</p></div>
+          <div class="info-card"><h4>Response time</h4><p>Within 24 hours on business days</p></div>
+          <div class="info-card"><h4>Best fit for</h4><p>eCommerce, SaaS, and logistics companies</p></div>
+          <div class="info-card"><h4>Project range</h4><p>$1,500 to $15,000 depending on scope</p></div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="form-card">
+            <h3>Send a message</h3>
+            <form class="form" id="contactForm" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="firstName">First name</label>
+                  <input type="text" id="firstName" name="firstName" autocomplete="given-name">
+                  <span class="field__error">Please enter your first name.</span>
+                </div>
+                <div class="field">
+                  <label for="lastName">Last name</label>
+                  <input type="text" id="lastName" name="lastName" autocomplete="family-name">
+                  <span class="field__error">Please enter your last name.</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="email">Work email</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <span class="field__error">Please enter a valid work email.</span>
+              </div>
+              <div class="field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+                <span class="field__error">Please enter your company.</span>
+              </div>
+              <div class="field">
+                <label for="industry">Industry</label>
+                <select id="industry" name="industry">
+                  <option value="ecommerce">eCommerce brand</option>
+                  <option value="saas">SaaS company</option>
+                  <option value="logistics">3PL and Logistics operator</option>
+                  <option value="other">Other business</option>
+                  <option value="agency">Agency or Consultant looking to partner</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us where the manual work lives."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Send Message and Book a Call</button>
+            </form>
+            <div class="form-success" id="contactSuccess">
+              <div class="form-success__check" aria-hidden="true">&#10003;</div>
+              <h3>Message sent. Redirecting you to book a call...</h3>
+              <p class="muted">Scroll down to pick a time that works for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" id="calendly">
+    <div class="container">
+      <div class="section__head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+        <span class="section__label">Book Now</span>
+        <h2>Pick a time for your free audit call.</h2>
+      </div>
+      <div class="calendly-wrap reveal">
+        <iframe src="https://calendly.com/dlazovski-moduvoai/executive-briefing" width="100%" height="700" frameborder="0" title="Book an executive briefing with Moduvo"></iframe>
+        <div class="calendly-fallback">
+          <p>If the scheduler does not load, <a href="https://calendly.com/dlazovski-moduvoai/executive-briefing" class="accent">open the booking page in a new tab</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand"><a href="index.html" class="nav__logo">MODU<span class="accent">V</span>O</a><p class="footer__tagline">Your team should be growing, not managing spreadsheets.</p></div>
+        <div class="footer__cols">
+          <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div class="footer__col"><h4>Services</h4><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">CRM Integration</a></li><li><a href="services.html">Team Training</a></li></ul></div>
+          <div class="footer__col"><h4>Programs</h4><ul><li><a href="webinar.html">Free Webinar</a></li><li><a href="affiliate.html">Affiliate Program</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>Copyright 2026 Moduvo</p><p>Built with n8n and Claude in CEE</p></div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

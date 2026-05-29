@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinar | Moduvo</title>
+  <meta name="description" content="The Invisible PPO Tax. A free 75 minute working session for mid market 3PL operators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <nav class="nav" id="mainNav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Moduvo home">MODU<span class="accent">V</span>O</a>
+      <ul class="nav__links" role="list">
+        <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="webinar.html">Webinar</a></li><li><a href="affiliate.html">Affiliate</a></li><li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list"><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="webinar.html">Webinar</a></li><li><a href="affiliate.html">Affiliate</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html" class="btn btn--primary">Book a Call</a></li></ul>
+    </div>
+  </nav>
+
+  <section class="container webinar-hero">
+    <div class="reveal-left">
+      <div class="live-badges">
+        <span class="live-dot"></span>
+        <span class="label">Live Webinar</span>
+        <span class="label">Mid Market 3PL Operators</span>
+        <span class="label">Tue Jun 30 2026</span>
+      </div>
+      <h1 class="hero__heading">The Invisible PPO Tax</h1>
+      <p class="hero__sub">How mid market logistics operators quietly lose 700 hours a year to broken workflows and the five step diagnostic to claw it back. A 75 minute working session for VPs of Ops, COOs, and CEOs running 51 to 500 person carriers, brokerages, and 3PLs.</p>
+      <div class="teaser-stats">
+        <div><strong class="count-up" data-target="700" data-suffix="+">0</strong><span>Hours lost</span></div>
+        <div><strong class="count-up" data-target="5">0</strong><span>Workflow categories</span></div>
+        <div><strong class="count-up" data-target="75">0</strong><span>Min live session</span></div>
+        <div><strong>$0</strong><span>To attend</span></div>
+      </div>
+      <div class="hero__ctas">
+        <a href="#register" class="btn btn--primary">Register Free</a>
+        <a href="#diagnostic" class="btn btn--ghost">See What Is Covered</a>
+      </div>
+    </div>
+
+    <aside>
+      <div class="reg-card" id="register">
+        <h3>Register for Free</h3>
+        <p class="reg-card__date">Tuesday June 30 2026 Live on Google Meet</p>
+        <form class="form" id="webinarForm" novalidate>
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name">
+            <span class="field__error">Please enter your full name.</span>
+          </div>
+          <div class="field">
+            <label for="webEmail">Work email</label>
+            <input type="email" id="webEmail" name="email" autocomplete="email">
+            <span class="field__error">Please enter a valid work email.</span>
+          </div>
+          <div class="field">
+            <label for="webCompany">Company</label>
+            <input type="text" id="webCompany" name="company" autocomplete="organization">
+            <span class="field__error">Please enter your company.</span>
+          </div>
+          <div class="field">
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option value="vp-ops">VP of Operations</option>
+              <option value="coo">COO</option>
+              <option value="ceo">CEO Founder</option>
+              <option value="ops-manager">Operations Manager</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Claim My Free Spot</button>
+        </form>
+        <div class="form-success" id="webinarSuccess">
+          <div class="form-success__check" aria-hidden="true">&#10003;</div>
+          <h3>You are registered.</h3>
+          <p class="muted">We will send the link to your email 24 hours before the event.</p>
+          <a href="contact.html" class="accent">Book a 1 on 1 call instead</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section section--surface" id="hiddenCost">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__label">The Real Cost</span>
+        <h2>Where the hours actually go.</h2>
+        <p>Five workflow categories that silently drain operational capacity every year.</p>
+      </div>
+      <div class="reveal">
+        <table class="cost-table">
+          <thead><tr><th>#</th><th>Workflow</th><th>Description</th><th>Hours per Year</th></tr></thead>
+          <tbody>
+            <tr><td>01</td><td style="font-family:inherit;color:var(--text)">Billing Reconciliation</td><td class="muted">Manual matching of carrier invoices, customer rates, and accessorials across multiple TMS exports</td><td>180 hrs</td></tr>
+            <tr><td>02</td><td style="font-family:inherit;color:var(--text)">Exception Handling</td><td class="muted">Detention, OS&amp;D, and rate disputes flowing through inboxes and Slack with no system of record</td><td>160 hrs</td></tr>
+            <tr><td>03</td><td style="font-family:inherit;color:var(--text)">Client Onboarding</td><td class="muted">Credit apps, MSAs, EDI specs, and SOP intake re keyed across 4 to 6 disconnected tools</td><td>120 hrs</td></tr>
+            <tr><td>04</td><td style="font-family:inherit;color:var(--text)">Carrier Coordination</td><td class="muted">Sourcing, qualifying, and updating carrier rosters across phone, email, and load boards</td><td>140 hrs</td></tr>
+            <tr><td>05</td><td style="font-family:inherit;color:var(--text)">Weekly Reporting</td><td class="muted">Manual pulls from TMS, accounting, and spreadsheets to assemble Monday leadership decks</td><td>110 hrs</td></tr>
+            <tr class="total-row"><td>&Sigma;</td><td>The PPO Tax</td><td>Total annual hours consumed by manual operations</td><td>710 hrs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="diagnostic">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__label">The Method</span>
+        <h2>A five step method for reclaiming capacity.</h2>
+      </div>
+      <div class="reveal">
+        <div class="method-block"><div class="method-block__num">01</div><div><h3>Map the Handoffs</h3><p>Trace every workflow boundary between people, tools, and inboxes where ownership gets dropped. Build a visual map of every place work changes hands.</p></div></div>
+        <div class="method-block"><div class="method-block__num">02</div><div><h3>Time Cost the Work</h3><p>Quantify hours per week, per role, per workflow. Turn feels heavy into a defensible number backed by data your leadership team can act on.</p></div></div>
+        <div class="method-block"><div class="method-block__num">03</div><div><h3>Score Feasibility</h3><p>Rate each workflow on data quality, exception volume, and integration complexity to find the ones that are actually fixable in the near term.</p></div></div>
+        <div class="method-block"><div class="method-block__num">04</div><div><h3>Rank by ROI</h3><p>Sort by hours saved per dollar invested. Stop optimizing the loud problems and fix the expensive ones first.</p></div></div>
+        <div class="method-block"><div class="method-block__num">05</div><div><h3>Sequence the Roadmap</h3><p>Build a 90 day sequence so each fix funds and de risks the next one. No two year transformation projects. Just clear measurable steps.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head reveal"><span class="section__label">Your host for the session</span></div>
+      <div class="presenter reveal">
+        <div class="presenter__avatar" aria-hidden="true">DL</div>
+        <div class="presenter__body">
+          <h4>David Lazovski</h4>
+          <p class="presenter__role">Founder of Moduvo</p>
+          <p>David works with mid market logistics operators across CEE to eliminate manual workflows and build systems their teams can own and extend. This session shares the exact diagnostic framework he uses on every client engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="container reveal">
+      <span class="section__label">Limited Seats</span>
+      <h2>Reserve your free spot before June 30.</h2>
+      <p>Bring your toughest workflow. We will show you how to measure it and where to start fixing it.</p>
+      <a href="#register" class="btn btn--primary">Register Free</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand"><a href="index.html" class="nav__logo">MODU<span class="accent">V</span>O</a><p class="footer__tagline">Your team should be growing, not managing spreadsheets.</p></div>
+        <div class="footer__cols">
+          <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div class="footer__col"><h4>Services</h4><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">CRM Integration</a></li><li><a href="services.html">Team Training</a></li></ul></div>
+          <div class="footer__col"><h4>Programs</h4><ul><li><a href="webinar.html">Free Webinar</a></li><li><a href="affiliate.html">Affiliate Program</a></li><li><a href="contact.html">Book a Call</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>Copyright 2026 Moduvo</p><p>Built with n8n and Claude in CEE</p></div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

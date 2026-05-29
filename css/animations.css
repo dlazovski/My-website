@@ -1,0 +1,75 @@
+/* ===== REVEAL ===== */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.reveal-left { opacity: 0; transform: translateX(-20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-left.is-visible { opacity: 1; transform: translateX(0); }
+
+.reveal-right { opacity: 0; transform: translateX(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-right.is-visible { opacity: 1; transform: translateX(0); }
+
+/* ===== STAGGER CHILDREN ===== */
+.stagger-children > * { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.stagger-children.is-visible > * { opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+.stagger-children.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+.stagger-children.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+.stagger-children.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+.stagger-children.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+.stagger-children.is-visible > *:nth-child(7) { transition-delay: 480ms; }
+.stagger-children.is-visible > *:nth-child(8) { transition-delay: 560ms; }
+
+/* ===== LOAD ANIMATION ===== */
+.animate-load { opacity: 0; transform: translateY(24px); animation: loadIn 0.8s ease forwards; animation-delay: var(--load-delay, 0s); }
+@keyframes loadIn { to { opacity: 1; transform: translateY(0); } }
+
+/* ===== HERO WORDS ===== */
+.word-animate { display: inline-block; opacity: 0; transform: translateY(40px); animation: wordIn 0.7s ease forwards; }
+@keyframes wordIn { to { opacity: 1; transform: translateY(0); } }
+
+/* ===== MARQUEE ===== */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee__track.paused { animation-play-state: paused; }
+
+/* ===== BREATHE ===== */
+@keyframes breathe { 0%, 100% { transform: translate(-50%, -20%) scale(1); } 50% { transform: translate(-50%, -20%) scale(1.05); } }
+.hero__glow { animation: breathe 8s ease-in-out infinite; }
+
+/* ===== SHIMMER ===== */
+@keyframes shimmer { 0% { background-position: -468px 0; } 100% { background-position: 468px 0; } }
+.placeholder-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0) 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.8s linear infinite;
+}
+
+/* ===== PULSE ===== */
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+/* ===== CURSOR ===== */
+.cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; border-radius: 50%; }
+.cursor-dot { width: 8px; height: 8px; background: var(--accent); transform: translate(-50%, -50%); }
+.cursor-ring {
+  width: 40px; height: 40px;
+  border: 1px solid var(--accent);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: width 0.25s ease, height 0.25s ease, opacity 0.25s ease, background 0.25s ease;
+}
+.cursor-ring.expand { width: 64px; height: 64px; background: rgba(245,200,66,0.1); }
+@media (pointer: coarse) { .cursor-dot, .cursor-ring { display: none; } }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal, .reveal-left, .reveal-right, .stagger-children > *, .animate-load, .word-animate { opacity: 1 !important; transform: none !important; }
+}
